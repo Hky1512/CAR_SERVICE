@@ -1,0 +1,24 @@
+[PASS] Email hợp lệ
+[PASS] Email sai bị từ chối
+[PASS] Ngày quá khứ bị từ chối
+[PASS] Khách chỉ được hủy lịch đang chờ hoặc đã xác nhận
+[PASS] Luồng trạng thái hợp lệ
+[PASS] Dịch vụ Khác được nhận diện đúng
+[PASS] Mã lịch có định dạng LH + ngày + 6 ký tự
+[PASS] AI chỉ chấp nhận mã dịch vụ có trong danh mục
+[PASS] AI từ chối mã dịch vụ không tồn tại
+[PASS] Không có API key thì AI báo chưa cấu hình mà không gọi CSDL
+[PASS] Định dạng tiền tham khảo và trạng thái cứu hộ
+[PASS] Kiểm tra ngày hợp lệ và ngày giả bị từ chối
+[PASS] Ảnh phụ tùng dùng HTTPS hoặc đường dẫn nội bộ an toàn
+[PASS] Khung giờ hợp lệ và không chồng lấn ngược
+[PASS] Ngày và mã lịch được xác thực
+[PASS] Ghi chú dịch vụ Khác tối thiểu 5 ký tự
+[PASS] Ghi chú bất kỳ bị từ chối nếu quá dài
+[PASS] Biển số chuẩn hóa và loại khoảng trắng
+[PASS] Chỉ cho phép đường quay lại nội bộ hợp lệ
+[PASS] Gemini trả về loại không hợp lệ bị bỏ
+[PASS] Lỗi HTTP Gemini có nhãn phân biệt
+[PASS] Trạng thái cứu hộ không được nhảy thẳng
+
+Tổng: 22 | Đạt: 22 | Không đạt: 0

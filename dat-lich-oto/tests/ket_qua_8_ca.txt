@@ -1,0 +1,23 @@
+CAR SERVICE - KIEM THU 8 CA TICH HOP
+Ngay gio: 2026-10-27 11:09:57
+Moi truong: PHP 8.2.12
+Database tam: cs_kiemthu_183e19b0a7 (da xoa khi ket thuc)
+
+TC01 [PASS] Hai khach dat dong thoi cho cuoi
+  2 processes submitted concurrently, 1 accepted and 1 rejected; database has exactly 1 appointment.
+TC02 [PASS] Khach A khong sua duoc xe cua khach B
+  Update attempted with B vehicle ID and A user ID; B vehicle remained unchanged.
+TC03 [PASS] Khach A khong huy duoc lich cua khach B
+  The cancellation was rejected; B appointment status remained Cho xac nhan.
+TC04 [PASS] Form thieu token CSRF bi tu choi
+  Missing CSRF token triggers HTTP 419, and no user record was created.
+TC05 [PASS] Admin khong giam suc chua thap hon so lich
+  2 existing bookings; reducing capacity from 2 to 1 was rejected, stored capacity remains 2.
+TC06 [PASS] Admin khong doi gio cua khung da co lich
+  Changing slot time was rejected and start time remains 21:00.
+TC07 [PASS] Tra cuu cuu ho dung ma sai so dien thoai
+  Correct code with incorrect phone number returned no data; correct pair returned the rescue status.
+TC08 [PASS] Tai khoan bi khoa khong su dung duoc phien cu
+  Backend cleared the existing login session when account status was locked.
+
+Ket qua: 8/8 PASS

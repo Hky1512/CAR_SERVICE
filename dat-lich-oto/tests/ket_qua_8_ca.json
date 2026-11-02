@@ -1,0 +1,56 @@
+{
+    "executed_at": "2026-10-27 11:09:57",
+    "php_version": "8.2.12",
+    "cases": [
+        {
+            "id": "TC01",
+            "name": "Hai khach dat dong thoi cho cuoi",
+            "status": "PASS",
+            "detail": "2 processes submitted concurrently, 1 accepted and 1 rejected; database has exactly 1 appointment."
+        },
+        {
+            "id": "TC02",
+            "name": "Khach A khong sua duoc xe cua khach B",
+            "status": "PASS",
+            "detail": "Update attempted with B vehicle ID and A user ID; B vehicle remained unchanged."
+        },
+        {
+            "id": "TC03",
+            "name": "Khach A khong huy duoc lich cua khach B",
+            "status": "PASS",
+            "detail": "The cancellation was rejected; B appointment status remained Cho xac nhan."
+        },
+        {
+            "id": "TC04",
+            "name": "Form thieu token CSRF bi tu choi",
+            "status": "PASS",
+            "detail": "Missing CSRF token triggers HTTP 419, and no user record was created."
+        },
+        {
+            "id": "TC05",
+            "name": "Admin khong giam suc chua thap hon so lich",
+            "status": "PASS",
+            "detail": "2 existing bookings; reducing capacity from 2 to 1 was rejected, stored capacity remains 2."
+        },
+        {
+            "id": "TC06",
+            "name": "Admin khong doi gio cua khung da co lich",
+            "status": "PASS",
+            "detail": "Changing slot time was rejected and start time remains 21:00."
+        },
+        {
+            "id": "TC07",
+            "name": "Tra cuu cuu ho dung ma sai so dien thoai",
+            "status": "PASS",
+            "detail": "Correct code with incorrect phone number returned no data; correct pair returned the rescue status."
+        },
+        {
+            "id": "TC08",
+            "name": "Tai khoan bi khoa khong su dung duoc phien cu",
+            "status": "PASS",
+            "detail": "Backend cleared the existing login session when account status was locked."
+        }
+    ],
+    "passed": 8,
+    "total": 8
+}

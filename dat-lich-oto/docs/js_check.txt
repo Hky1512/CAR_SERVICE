@@ -1,0 +1,1 @@
+node --check public/assets/app.js: PASS (khong co loi cu phap)
